@@ -2,6 +2,7 @@ package br.com.luanadev.concatadapter
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import androidx.recyclerview.widget.ConcatAdapter
 import br.com.luanadev.concatadapter.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {

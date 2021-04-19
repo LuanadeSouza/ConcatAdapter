@@ -5,9 +5,10 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
+import br.com.luanadev.concatadapter.TipsAdapter.*
 import br.com.luanadev.concatadapter.databinding.ItemTipBinding
 
-class TipsAdapter : ListAdapter<Tip, TipsAdapter.TipViewHolder>(DIFF_CALLBACK) {
+class TipsAdapter : ListAdapter<Tip, TipViewHolder>(DIFF_CALLBACK) {
 
     var gotItItemClickListener: (() -> Unit)? = null
 
@@ -39,7 +40,6 @@ class TipsAdapter : ListAdapter<Tip, TipsAdapter.TipViewHolder>(DIFF_CALLBACK) {
 
         fun bind(tip: Tip) {
             itemBinding.textTip.text = tip.description
-
             itemBinding.textGotIt.setOnClickListener {
                 gotItItemClickListener?.invoke()
             }

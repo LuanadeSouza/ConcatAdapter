@@ -5,12 +5,13 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
+import br.com.luanadev.concatadapter.ProgrammingLanguagesAdapter.*
 import br.com.luanadev.concatadapter.databinding.ItemProgrammingLanguageBinding
 
-class ProgrammingLanguagesAdapter :
-    ListAdapter<ProgrammingLanguage, ProgrammingLanguagesAdapter.ProgrammingLanguageViewHolder>(
+class ProgrammingLanguagesAdapter
+    : ListAdapter<ProgrammingLanguage, ProgrammingLanguageViewHolder>(
         DIFF_CALLBACK
-    ) {
+) {
 
     override fun onCreateViewHolder(
         parent: ViewGroup,
@@ -48,9 +49,9 @@ class ProgrammingLanguagesAdapter :
 
         fun bind(programmingLanguage: ProgrammingLanguage) {
             itemBinding.run {
-                imageLanguage.setImageResource(programmingLanguage.logo)
                 textLanguageName.text = programmingLanguage.name
                 textParadigm.text = programmingLanguage.paradigm
+                imageLanguage.setImageResource(programmingLanguage.logo)
             }
         }
 
