@@ -11,8 +11,8 @@ class MainActivity : AppCompatActivity() {
     private val binding by viewBinding {
         ActivityMainBinding.inflate(layoutInflater)
     }
-    private lateinit var programmingLanguagesAdapter: ProgrammingLanguagesAdapter
-    private lateinit var tipsAdapter: TipsAdapter
+    private val programmingLanguagesAdapter by lazy {ProgrammingLanguagesAdapter()}
+    private val tipsAdapter by lazy {TipsAdapter ()}
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -21,8 +21,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun initRecyclerView() {
-        programmingLanguagesAdapter = ProgrammingLanguagesAdapter()
-        tipsAdapter = TipsAdapter().apply {
+        tipsAdapter.apply {
             gotItItemClickListener = {
                 onDismissTips()
             }
