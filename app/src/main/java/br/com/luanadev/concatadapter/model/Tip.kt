@@ -1,4 +1,4 @@
-package br.com.luanadev.concatadapter
+package br.com.luanadev.concatadapter.model
 
 data class Tip(
     val description: String

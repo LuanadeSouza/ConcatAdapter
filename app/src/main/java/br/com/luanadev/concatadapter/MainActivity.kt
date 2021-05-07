@@ -4,10 +4,11 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.ConcatAdapter
 import br.com.luanadev.concatadapter.databinding.ActivityMainBinding
+import br.com.luanadev.concatadapter.model.programmingLanguages
+import br.com.luanadev.concatadapter.model.tips
 import by.kirich1409.viewbindingdelegate.viewBinding
 
 class MainActivity : AppCompatActivity() {
-
     private val binding by viewBinding {
         ActivityMainBinding.inflate(layoutInflater)
     }

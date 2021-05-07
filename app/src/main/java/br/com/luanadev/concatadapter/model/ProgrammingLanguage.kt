@@ -1,6 +1,7 @@
-package br.com.luanadev.concatadapter
+package br.com.luanadev.concatadapter.model
 
 import androidx.annotation.DrawableRes
+import br.com.luanadev.concatadapter.R
 
 data class ProgrammingLanguage(
     val name: String,

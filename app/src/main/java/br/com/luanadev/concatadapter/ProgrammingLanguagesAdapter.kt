@@ -7,6 +7,7 @@ import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import br.com.luanadev.concatadapter.ProgrammingLanguagesAdapter.*
 import br.com.luanadev.concatadapter.databinding.ItemProgrammingLanguageBinding
+import br.com.luanadev.concatadapter.model.ProgrammingLanguage
 
 class ProgrammingLanguagesAdapter
     : ListAdapter<ProgrammingLanguage, ProgrammingLanguageViewHolder>(

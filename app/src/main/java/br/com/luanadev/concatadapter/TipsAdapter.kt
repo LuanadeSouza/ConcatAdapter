@@ -7,6 +7,7 @@ import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import br.com.luanadev.concatadapter.TipsAdapter.*
 import br.com.luanadev.concatadapter.databinding.ItemTipBinding
+import br.com.luanadev.concatadapter.model.Tip
 
 class TipsAdapter : ListAdapter<Tip, TipViewHolder>(DIFF_CALLBACK) {
 
